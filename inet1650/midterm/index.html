@@ -44,72 +44,71 @@
 			/* START HERE: Add your rules below. Change * { } to the rule you need to right the rule that has been described */
 			
 			/* Rules for Text Examples */
-			* { } /* make all text in the paragraphs center aligned */
-			* { } /* make odd paragraphs bold with a font of "helvetica" */
-			* { } /* make even paragraphs use font "courier" */
-			* { } /* ID textEx1 should have font size of 1.5 em */
-			* { } /* ID textEx2 should have font size of 1.4 em */
-			#textEx3 { font-size: 1.3em; } /* ID textEx3 should have font size of 1.3 em */
-			* { } /* ID textEx4 should have font size of 1.2 em */
-			* { } /* ID textEx5 should have font size of 1.1 em */
-			* { } /* ID textEx6 should have font size of 1.0 em */
-			* { } /* ID textEx7 should have font size of 0.9 em */
-			* { } /* ID textEx8 should have font size of 0.8em and line height of 3em; */
+			* p { text-align: center;  } /* make all text in the paragraphs center aligned */
+			* p li.odd{font-weight: bold; font-family: Helvetica; } /* make odd paragraphs bold with a font of "helvetica" */
+			* p li.even{font-family: Courier; } /* make even paragraphs use font "courier" */
+			* #textEx1{font-size: 1.5 em; } /* ID textEx1 should have font size of 1.5 em */ 		
+			* #textEx2{font-size: 1.4 em; } /* ID textEx2 should have font size of 1.4 em */
+			* #textEx3{font-size: 1.3 em; } /* ID textEx3 should have font size of 1.3 em */
+			* #textEx4{font-size: 1.2 em; } /* ID textEx4 should have font size of 1.2 em */
+			* #textEx4{font-size: 1.1 em; } /* ID textEx5 should have font size of 1.1 em */
+			* #textEx5{font-size: 1.0 em; } /* ID textEx6 should have font size of 1.0 em */
+			* #textex6{font-size: 0.9 em; } /* ID textEx7 should have font size of 0.9 em */
+			* #textex7{font-size: 0.8 em; line-height: 3em; } /* ID textEx8 should have font size of 0.8em and line height of 3em; */
 			
 			/* Rules for List Examples */
-			* { } /* first list should have squares for bullets */
-			#list ul.list1 { font-family: helvetica; } /* first list should use "helvetica" */
-			* { } /* first list should have a font size of 12px */
-			* { } /* The titles of songs should be 16px in size and have a color of #ff0000 */
-			* { } /* The year should be bold, 25px in size, use helvetica and have a color of #0000ff */
+			* #list ul.list1 {list-style-type: square; } /* first list should have squares for bullets */
+			#list ul.list1 { font-family: Helvetica; } /* first list should use "helvetica" */
+			* #list ul.list1 {font-size: 12px; } /* first list should have a font size of 12px */
+			* #title {font-size: 16px; color: #ff0000; } /* The titles of songs should be 16px in size and have a color of #ff0000 */
+			* #year {font-size: 25px: font-family: Helcetica; color: #0000ff; } /* The year should be bold, 25px in size, use helvetica and have a color of #0000ff */
 			
-			* { } /* list 2 should use upper-roman for bullets */
-			* { } /* list 2 odd items should be red and uppercase */
-			* { } /* list 2 even items should be green */
+			* #list ol.list2 {list-style-type: upper-roman; } /* list 2 should use upper-roman for bullets */
+			* #list ol.list2 li.odd {color: red; text-transform: uppercase; } /* list 2 odd items should be red and uppercase */
+			* #list ol.list2 li.even {color: green; } /* list 2 even items should be green */
 			#list ol.list2 li.even .city { font-size: 1.5em; } /* city in list 2 in even rows should have a font size of 1.5em */
-			* { } /* state in list 2 in even rows should have a font size of 1.3em */
-			* { } /* populate in all items should be 2.0em in size and bold */
+			* #list ol.list2 li.even .state {font-size: 1.3em; } /* state in list 2 in even rows should have a font size of 1.3em */
+			* #list ol.list2 li.pop {font-size: 2.0em; font-weight: bold; } /* populate in all items should be 2.0em in size and bold */
 			
-			* { } /* list 3 bullets should be decimals with leading zeros */
-			* { } /* list 3 first list item should have a line-through the text */
+			* #list ol.list3 {list-style-type: decimal-leading-zero; } /* list 3 bullets should be decimals with leading zeros */
+			* #list ol.list3 {text-decoration: line-through; } /* list 3 first list item should have a line-through the text */
 			#list ol.list3 li:last-child { text-decoration: line-through; } /* list 3 last child should have a line-through the text */
-			* { } /* 12th item in lest 3 should  have a line-through the text */
+			* #list ol.list3 li:12{text-decoration: line-through; } /* 12th item in lest 3 should  have a line-through the text */
 			
 			/* Rules for Background Examples */
-			* { } /* all blocks should underline the text in them */
-			* { } /* block 1 should use tile1.jpg to fill the background, have a font that is blue with a size of 3em and centered */
-			* { } /* block 2 should use tile2.jpg to tile across the top only, have a font that is red with a size of 3em and centered */
+			* #background{text-decoration: underline; } /* all blocks should underline the text in them */
+			* #block1 {background-image:url(tile1.jpg); color: blue; font-size: 3em; text-align: center; } /* block 1 should use tile1.jpg to fill the background, have a font that is blue with a size of 3em and centered */
+			* #block2 {background-image:url(tile2.jpg); background-repeat: repeat-x; color: red; font-size: 3em; text-align: center;} /* block 2 should use tile2.jpg to tile across the top only, have a font that is red with a size of 3em and centered */
 			#block3 { background-image:url(tile3.jpg); background-repeat: repeat-y; color: green; font-size: 3em; text-align: right; } /* block 3 should use tile3.jpg to tile only the left side, have a font that is green with a size of 3em and right justified */ 
-			* { } /* block 4 should use tile4.jpg to tile only across the bottom, have an orange font of size 3em and right justified */
-			* { } /* block 5 should use tile5.jpg with no tiling and positioned in the center, have a font that is gray in color, 3em in szie and centered */  
+			* #block4 {background-image:url(tile4.jpg); color: orange; font-size: 3em; text-align: right; } /* block 4 should use tile4.jpg to tile only across the bottom, have an orange font of size 3em and right justified */
+			* #block5 {background-image:url(tile5.jpg); background-position: ceenter; color: gray; font-size: 3em; text-align: center; } /* block 5 should use tile5.jpg with no tiling and positioned in the center, have a font that is gray in color, 3em in szie and centered */  
 			
 			/* Rules for Gradient Examples */
 			
-			* { } /* linear gradient left to right going from yellow to green */
+			* #gradient blockquote.quote1 { background-image: linear-gradient(to right, yellow, green); } /* linear gradient left to right going from yellow to green */
 			#gradient blockquote.quote2 { background-image: linear-gradient(to left, yellow, green); } /* linear gradient right to left going from yellow to green */
-			* { } /* linear gradient top to bottom going from yellow to green */
-			* { } /* linear gradient bottom to top going from yellow to green */
+			* #gradient blockquote.quote3{backgroumd-image: linear-gradient(to bottom, yellow, green); } /* linear gradient top to bottom going from yellow to green */
+			* #gradient blockquote.quote4{background-image: linear-gradient(to top, yellow, green); } /* linear gradient bottom to top going from yellow to green */
 			#gradient blockquote.quote5 { background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); }
-			* { } /* linear gradient right to left going from silver to teal */
-			* { } /* linear gradient top to bottom going from silver to teal */
-			* { } /* linear gradient bottom to top going from silver to teal */
-			* { } /* background blue font color #fff */
-			* { } /* background green font color #fff */
+			* #gradient blockquote.quote6{background-image: linear-gradient(to left, silver, teal); } /* linear gradient right to left going from silver to teal */
+			* #gradient blockquote.quote7{background-image: linear-gradient(to bottom, silver, teal); } /* linear gradient top to bottom going from silver to teal */
+			* #gradient blockquote.quote8{background-image: linear-gradient(to top, silver, teal); } /* linear gradient bottom to top going from silver to teal */
+			* #gradient blockquote.quote9{background-color: blue; color: #fff; } /* background blue font color #fff */
+			* #gradient blockquote.quote10{background-color: green; color: #fff; } /* background green font color #fff */
 					
 			/* Rules for Pseudo Element and Class Selector Examples */
-			* { } /* first level of bullets in table of contents should be upper-roman */
-			* { } /* second level of bullets in table of contents  should be decimal */
-			* { } /* third level of bullets in table of contents  should be lower alpha */
+			* #toc :first-child {list-style-type: upper-roman; } /* first level of bullets in table of contents should be upper-roman */
+			* #toc{list-style-type: decimal; } /* second level of bullets in table of contents  should be decimal */
+			* #toc{list-style-type: lower-alpha; } /* third level of bullets in table of contents  should be lower alpha */
 	
-			* { } /* first level of items in table of contents  text should have a text shadow of read that is offset to the right and down by 1px */
-			* { } /* no shadow on rest of items in table of contents */
-			* { } /* first item in each third level should be bold */
-			* { } /* second item in each third level shold be the color blue */
+			* #toc{text-shadow:1px 1px red; } /* first level of items in table of contents  text should have a text shadow of read that is offset to the right and down by 1px */
+			* #toc{text-shadow: no shadow } /* no shadow on rest of items in table of contents */
+			* #toc :first-child{font-weight: bold; } /* first item in each third level should be bold */
+			* #toc{color: blue; } /* second item in each third level shold be the color blue */
 			
-			* { } /* all text in under class receipt should be size 14px use font "monospace" and have the color lime */
+			* #receipt{font-size: 14px; font-family: Mononspace; } /* all text in under class receipt should be size 14px use font "monospace" and have the color lime */
 			
 			/* END HERE: The end of your rules */
-			
 		</style>
 	</head>
 <body>
