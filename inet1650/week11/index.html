@@ -4,29 +4,31 @@
 <title></title>
 
 <style>
-.container {
-  position: relative;
-}
-nav {
-  position: absolute;
-  left: 0px;
-  width: 200px;
-  float: right;
-}
-section {
-  margin-left: 200px;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 70px;
-  background-color: white;
-  width: 100%;
-}
-body {
-  margin-bottom: 120px;
-}
+  .container {
+    position: relative;
+  }
+  nav.elem {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+  }
+  section {
+    /* position is static by default */
+    margin-left: 200px;
+  }
+  footer.elem {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 90px;
+    background-color: white;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+  }
+  body {
+    margin-bottom: 120px;
+  }
 </style>
  <nav class="elem elem-red">
     <span class="label">&lt;nav></span>
